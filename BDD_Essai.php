@@ -12,7 +12,7 @@ $perso = new Personnage([
 
 echo $perso->nom();
 
-$db = new PDO('mysql:host=localhost; dbname=Jeu_Role; charset=utf8', 'root', 'Alligator487§?§');
+$db = new PDO('mysql:host=localhost; dbname=Jeu_Role; charset=utf8', 'root', '');
 $manager = new PersonnageManager($db);
 $persos = $manager->getList();
 
